@@ -9,19 +9,32 @@
 #usuario. Esta función incluye todas las condiciones para checar si la hora ingresada es valida y también tiene las
 #instrucciones necesarias para convertir las horas del formato de 24 hrs al formato de 12 hrs. Al final, la función
 #regresa el nuevo valor de horas, minutos y segundos.
+
+am_pm = ""
+
 def calcularHora(horas, minutos, segundos):
 
-    if horas >= 0 and horas <= 12:
+    if horas >= 0 and horas < 12:
         if minutos > 0 or minutos < 60 or segundos > 0 or segundos < 60:
-            return horas, minutos, segundos
+            am_pm = "a.m."
+            return horas, minutos, segundos, am_pm
         else:
             print("error")
             main()
 
+    elif horas == 12:
+            if minutos >= 0 and minutos <= 60 and segundos >= 0 and segundos <= 60:
+                am_pm = "p.m."
+                return horas, minutos, segundos, am_pm
+            else:
+                print("error")
+                main()
+
     elif horas >= 13 and horas <= 23:
         if minutos >= 0 and minutos <= 60 and segundos >= 0 and segundos <= 60:
+            am_pm = "p.m."
             horas = horas - 12
-            return horas, minutos, segundos
+            return horas, minutos, segundos, am_pm
         else:
             print("error")
             main()
@@ -29,7 +42,8 @@ def calcularHora(horas, minutos, segundos):
     elif horas == 24:
         if minutos >= 0 and minutos <= 60 and segundos >= 0 and segundos <= 60:
             horas = 0
-            return horas, minutos, segundos
+            am_pm = "a.m."
+            return horas, minutos, segundos, am_pm
         else:
             print("error")
             main()
@@ -52,7 +66,7 @@ def main():
     time12 = calcularHora(horas, minutos, segundos)
 
     print("")
-    print("La hora que indicó es: {}:{}:{} en el formato de 12 hrs.".format(time12[0], time12[1], time12[2]))
+    print("La hora que indicó es: {}:{}:{} {} en el formato de 12 hrs.".format(time12[0], time12[1], time12[2], time12[3]))
     salir = input("Muchas gracias por haber usado este programa.")
     quit()
 
