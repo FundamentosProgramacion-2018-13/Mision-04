@@ -35,7 +35,7 @@ def main():
     if numeroCopias >= 10:
         precio = numeroCopias * 1500 - ((numeroCopias * 1500)*(descuento * 0.01))
         print("El descuento es: ", descuento, "%")
-        print("El precio es: $", precio)
+        print("El precio es: $%.2f" % precio)
 
 
 #Llama a la función principal
