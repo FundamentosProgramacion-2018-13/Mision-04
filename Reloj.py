@@ -5,6 +5,9 @@
 #Cambia el formato de las horas de 24hrs a 12hrs con una función y regresa el resultado
 def cambiarFormatoHora(hora):
     formato12hrs = 0
+    if hora == 0:
+        formato12hrs = hora + 12
+        return formato12hrs
     if hora > 12:
         formato12hrs = hora - 12
         return formato12hrs
