@@ -1,3 +1,10 @@
+#Autor Daniel Cordova Bermudez
+#Grupo 02
+#Descripcion: El programa determina el tipo de triangulo con los datos de los lados.
+
+
+#Funacion tipoTriangulo compara la información de los lados para ver si es correcta, en ese caso ve que tipo de triangulo es según los ángulos-
+
 def tipoTriangulo(a, b, c):
 
 
@@ -5,7 +12,7 @@ def tipoTriangulo(a, b, c):
 
         if a == b == c:
             return "Los lados corresponden a un triángulo equilatero"
-        if a != b != c:
+        if  c != a != b != c:
             return "Los lados corresponden a un triángulo rectangúlo"
         if a == b != c or a != b == c or b != c == a:
             return "Los lados corresponden a un triángulo isósceles"
@@ -16,6 +23,8 @@ def tipoTriangulo(a, b, c):
         return "Estos lados no corresponden a un triángulo"
 
 
+#Función principal que pide los datos e los lados e imprime el resultado del tipo de triangulo.
+    
 def main():
 
     lado1 = int(input("Primer lado del triangulo:  "))
