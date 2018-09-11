@@ -1,7 +1,8 @@
 # Autor Daniel Cordova Bermudez
 # Grupo 02
-# Descripcion:
+# Descripcion:El programa calcula el costo de comprar paquetes de Software los cuales tienen diferentes descuentos, que se calculan dependiendo de la compra.
 
+#Función calcularDescuento se encarga de dar el descuento correcto al usuario comparando con la cantidad paquetes que se desean comprar,
 
 def calcularDescuento(numeroPaquetes,subTotal):
     if numeroPaquetes < 10:
@@ -21,6 +22,8 @@ def calcularDescuento(numeroPaquetes,subTotal):
         return descuento
 
 
+#Función calcularTotal calcula el total de la compra.
+    
 def calcularTotal(numeroPaquetes, subTotal):
 
     descuento = calcularDescuento(numeroPaquetes,subTotal)
@@ -28,7 +31,7 @@ def calcularTotal(numeroPaquetes, subTotal):
     return total
 
 
-
+#Función principal donde se pide la cantidad de paqutes, se verifica si es correto además de imprimir los resultados.
 
 def main():
     numeroPaquetes = (float(input("Escribe el numero de paquetes de Sotware a comprar:")))
@@ -40,7 +43,6 @@ def main():
     else:
         print("Error")
 
-
-
+#Llamar main
 
 main()
