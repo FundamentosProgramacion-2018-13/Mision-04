@@ -1,5 +1,6 @@
 #Autor: Claudio Mayoral García
-#Descripción es un programa que calcula el area y el perímetro de dos rectángulos pidiendo las dimensiones
+#Descripción es un programa que calcula el area y el perímetro de dos rectángulos pidiendo las dimensiones 
+#Y al final anunciar cual rectángulo tiene la mayor dimensión
 
 
 #Calcula el área del rectángulo uno con una función
