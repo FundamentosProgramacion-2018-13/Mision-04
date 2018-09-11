@@ -28,7 +28,7 @@ def calcularPerimetro2(base2, altura2):
 
 
 #Calcula cual rectángulo tiene mayor área o si ambas áreas son iguales y regresa el resultado
-def calcularMayorArea(area1, area2):
+def esMayorArea(area1, area2):
     if area1 < area2:
         return "El rectángulo 2 tiene más superficie"
     elif area2 < area1:
@@ -55,7 +55,7 @@ def main():
     print("El área del rectángulo 2 es de: %.2f cm2" % area2)
     print("EL perímetro del rectángulo 2 es de: %.2f cm" % perimetro2)
     print("-----------------------------------------------------------")
-    print(calcularMayorArea(area1, area2))
+    print(esMayorArea(area1, area2))
 
 
 #llama a la función principal
