@@ -12,7 +12,7 @@ def cambiarFormatoHora(hora):
 
 
 #Añade el formato "am" y "pm" al formato de las horas y regresa el formato indicado(am o pm)
-def anadirFormatoHora(hora):
+def esAmPm(hora):
     if hora > 12:
         return "pm"
     return "am"
@@ -24,7 +24,7 @@ def main():
     hora = int(input("Escribe la hora: "))
     minuto = int(input("Escribe el minuto: "))
     segundo = int(input("Escribe el segundo: "))
-    formatoAmPm = anadirFormatoHora(hora)
+    formatoAmPm = esAmPm(hora)
     formato12hrs = cambiarFormatoHora(hora)
     if hora < 0 or minuto < 0 or segundo < 0:
         print("error")
