@@ -1,8 +1,8 @@
 #Autor: Claudio Mayoral García
-#Recibe la hora en formato de 24 hrs y lo cambia a formato de 12hrs
+#Recibe la hora en formato de 24 hrs y lo cambia a formato de 12hrs pero si es una hora falsa manda un mensaje de error
 
 
-#Cambia el formato de las horas de 24hrs a 12hrs con una función
+#Cambia el formato de las horas de 24hrs a 12hrs con una función y regresa el resultado
 def cambiarFormatoHora(hora):
     formato12hrs = 0
     if hora > 12:
@@ -11,14 +11,15 @@ def cambiarFormatoHora(hora):
     return hora
 
 
-#Añade el formato "am" y "pm" al formato de las horas
+#Añade el formato "am" y "pm" al formato de las horas y regresa el formato indicado(am o pm)
 def anadirFormatoHora(hora):
     if hora > 12:
         return "pm"
     return "am"
 
 
-#Función principal
+#Función principal pide los valores hora, minuto, segundo e imprime la hora 
+#pero si no cumple con los requisitos imprime "error"
 def main():
     hora = int(input("Escribe la hora: "))
     minuto = int(input("Escribe el minuto: "))
