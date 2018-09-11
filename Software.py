@@ -3,7 +3,7 @@
 #Y el total de pagar de la compra y si ponen 0 o valores negativos manda un mensaje de error
 
 
-#Calcula el porcentaje de descuento dependiendo del numero de copias vendidas
+#Calcula el porcentaje de descuento dependiendo del numero de copias vendidas y regresa el descuento si es que existe
 def calcularDescuento(numeroCopias):
     descuento = 0
     if numeroCopias > 0 and numeroCopias < 10:
@@ -22,7 +22,8 @@ def calcularDescuento(numeroCopias):
         return descuento
 
 
-#Función Principal
+#Función Principal pide el numero de copias vendidas e imprime el descuento (si es que lo hay) y el precio
+#Incluyendo el descuento. Pero si no cumple con los requisitos manda un mensaje de error
 def main():
     numeroCopias = int(input("Introduce el número de copias que deseas comprar: "))
     if numeroCopias <= 0:
