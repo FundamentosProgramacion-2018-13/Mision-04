@@ -1,7 +1,9 @@
 #Autor Daniel Cordova Bermudez
 #Grupo 02
-#Descripcion:
+#Descripcion:El programa calcula el area junto con el perimetro de dos rectangulos, al final compara cual de los dos es mayor.
 
+
+#Función calcularArea se encarga de calcular el area de los rectangulos con la información previa.
 
 def calcularArea(ancho, largo):
 
@@ -9,13 +11,15 @@ def calcularArea(ancho, largo):
     return area
 
 
+#Funcion calcularPerimetro se encarga de calcular el perimetro de los rectangulos.
+
 def calcularPerimetro(ancho, largo):
 
     perimetro=ancho*2+largo*2
     return perimetro
 
-    pass
 
+#Función calcularMayor se encarga de ver que area es mayor con una serie de condicionales.
 
 def calcularMayor(area1, area2):
 
@@ -27,9 +31,8 @@ def calcularMayor(area1, area2):
         else:
             return "Area del rectangulo 1 es mayor a la del Area 2"
 
-
-    pass
-
+ 
+#Funcion principal que se encarga de pedir datos, enviarlos a otras funciones e imprime los resultaods finales.
 
 def main():
 
