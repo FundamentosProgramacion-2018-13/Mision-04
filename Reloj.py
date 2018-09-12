@@ -1,6 +1,7 @@
 # Alex Fernando Leyva Martinez - A01747078 - Grupo: 04
 # Convierte una tiempo especifico en formato de 24 horas al de 12 horas
 
+
 # Convierte la hora a formato de 12 dependiendo del valor
 def convertirFormato(hora):
     if hora > 12:
@@ -10,6 +11,7 @@ def convertirFormato(hora):
         formato12 = hora
         return formato12
 
+    
 # Dependiendo del valor, se define si es am o pm
 def definirAmPm(hora):
     if hora < 12:
@@ -19,6 +21,7 @@ def definirAmPm(hora):
         horario = "pm"
         return horario
 
+    
 # Analiza los datos dados, certificando si son válidos o no de acuerdo a las condiciones e imprime la cadena de la hora
 def main():
     hora = int(input("Teclea la hora: "))
@@ -33,5 +36,6 @@ def main():
     else:
         print("Son las: %d:%02d:%02d " % (formato12, minuto, segundo),horario)
 
+        
 # Llama a la función principal
 main()
