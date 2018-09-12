@@ -1,6 +1,7 @@
 # Alex Fernando Leyva Martinez - A01747078 - Grupo: 04
 # Calcula el descuento y la cantidad total a pagar dependiendo de la cantidad requerida de paquetes
 
+
 # Muestra la cantidad descontada dependiendo del número de paquetes
 def mostrarDescuento(paquetes):
     porcentaje = 0
@@ -20,7 +21,6 @@ def mostrarDescuento(paquetes):
         porcentaje = .50
         return porcentaje
     return porcentaje
-
 
 
 #Calcular el precio total con respecto al número de paquetes aplicando el descuento
@@ -51,5 +51,6 @@ def main():
         print("Error")
         main()
 
+        
 #Llama la función principal
 main()
