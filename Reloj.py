@@ -63,7 +63,7 @@ def main():
     segundo = int(input("Segundo: "))
     horaFormato12Horas = cambiarFormatodeVeintiCuatroHorasaDoceHoras(horaFormato24Horas)
     if minuto > 59 or minuto < 0 or segundo > 59 or segundo < 0:
-        print(""" "ERROR" Favor de introducir una hora válida""""")
+        print(" Favor de introducir una hora válida")
     elif horaFormato24Horas>12:
         print("La hora en formato de 12 horas es: %d:%02d:%02d  PM" % (horaFormato12Horas, minuto, segundo))
     elif horaFormato24Horas<12:
