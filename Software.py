@@ -27,7 +27,7 @@ def calcularDescuento(numeroCopias):
 def main():
     numeroCopias = int(input("Introduce el número de copias que deseas comprar: "))
     if numeroCopias <= 0:
-        print("Número de copas no válido")
+        print("Número de paquetes no válido")
     descuento = calcularDescuento(numeroCopias)
 
     if numeroCopias > 0 and numeroCopias < 10:
