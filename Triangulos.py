@@ -16,7 +16,7 @@ def esTriangulo(numero, numero2, numero3):
     elif numero == numero2 or numero ==numero3 or numero2 == numero3:
         return "Es un triángulo isóceles"
     else:
-    return "Es un triángulo escaleno"
+        return "Es un triángulo escaleno"
 
 
 #Función principal, pide valores de los lados del triángulo y manda a imprimir que tipo de triángulo es o si no existe
