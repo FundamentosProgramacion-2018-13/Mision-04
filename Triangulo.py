@@ -1,6 +1,7 @@
 # Alex Fernando Leyva Martinez - A01747078 - Grupo: 04
 # Este programa lee las longitudes de los triángulos para definir su tipo
 
+
 #Verifica el tipo del triángulo comparando los valores de sus lados
 def verificarTriangulo(lado1, lado2, lado3):
     if lado1 + lado2 + lado3 <= 0:
@@ -14,6 +15,7 @@ def verificarTriangulo(lado1, lado2, lado3):
     elif lado1 != lado2 != lado3:
         return "Estos lados no corresponden a ningún triángulo"
 
+    
 # Lee los valores de los lados y llama a la función que imprime el tipo de triángulo
 def main():
     lado1 = int(input("Lado 1: "))
@@ -22,5 +24,6 @@ def main():
     triangulo = verificarTriangulo(lado1, lado2, lado3)
     print(triangulo)
 
+    
 # Función principal
 main()
