@@ -16,7 +16,7 @@ def cambiarFormatoHora(hora):
 
 #Añade el formato "am" y "pm" al formato de las horas y regresa el formato indicado(am o pm)
 def esAmPm(hora):
-    if hora > 12:
+    if hora >= 12:
         return "pm"
     return "am"
 
