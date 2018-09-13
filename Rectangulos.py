@@ -45,10 +45,10 @@ def main():
 
     print("""
 
-    Area del primer rectangulo: %d
-    Perimetro del primer rectangulo: %d
-    Area del primer rectangulo: %d 
-    Perimetro del primer rectangulo: %d
+    Área del primer rectangulo: %d
+    Perímetro del primer rectangulo: %d
+    Área del segundo rectangulo: %d 
+    Perímetro del segundo rectangulo: %d
 
     %s
     """ % (areaDelRectangulo1, perimetroDelRectangulo1, areaDelRectangulo2, perimetroDelRectangulo2, mayor))
