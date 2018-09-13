@@ -3,7 +3,7 @@
 
 
 def convertirHora(horas, minutos, segundos): #Función para convertir la hora a formato de 12 hrs o descartarla si es inválida
-    if minutos>=0 and minutos<=60 and segundos>=0 and segundos <=60:
+    if minutos>=0 and minutos<60 and segundos>=0 and segundos <60:
         if horas >= 12 and horas<24:
             if horas > 12 and horas < 24:
                 horas = horas - 12
