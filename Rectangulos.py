@@ -29,7 +29,7 @@ def esMayor(area1, area2):
 def main():
     baseRectanguloA = int(input("Base del primer rectángulo: "))
     alturaRectanguloA = int(input("Altura del primer rectángulo: "))
-    baseRectanguloB = int(input("Base del segundo rectánguo: "))
+    baseRectanguloB = int(input("Base del segundo rectángulo: "))
     alturaRectanguloB = int(input("Altura del segundo rectángulo: "))
 
     areaA = calcularAreaRectangulo(baseRectanguloA, alturaRectanguloA)
