@@ -1,5 +1,5 @@
 #Autor: Luis Ricardo Chagala Cervantes.
-#
+#Con las medidas ingresadas determinar Área y Perimetro de ambos Rectongulos y determinar que Rectangulo tiene mayor Área.
 
 def areaRectangulo1(a1, b1):
     area1 = a1 * b1
