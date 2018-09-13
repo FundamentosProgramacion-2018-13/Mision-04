@@ -25,5 +25,5 @@ def main():
     print(resultado)
 
 
-# Llama a la función principal.
+# Llamada a la función main.
 main()
